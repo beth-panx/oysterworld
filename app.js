@@ -56,7 +56,7 @@ app.use(function(err, req, res, next) {
   });
 });
 
-//routes
+// routes
 app.get('/', function(req, res){
   res.render('index', {
     title: 'Home'
