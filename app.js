@@ -11,8 +11,8 @@ var users = require('./routes/users');
 var app = express();
 
 // view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
+// app.set('views', path.join(__dirname, 'views'));
+// app.set('view engine', 'jade');
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
@@ -55,6 +55,19 @@ app.use(function(err, req, res, next) {
     error: {}
   });
 });
+
+app.get('/',function(req,res){
+       
+     res.sendFile('index.html');
+
+});
+
+// routes
+// app.get('/', function(req, res){
+//   res.render('index', {
+//     title: 'Home'
+//   });
+// });
 
 
 module.exports = app;
