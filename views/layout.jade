@@ -6,321 +6,165 @@ html
     title Oyster World
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1')
-    link(rel='stylesheet', href='/stylesheets/main.css')
+    //if lte IE 8
+      script(src='assets/js/ie/html5shiv.js')
+    link(rel='stylesheet', href='/css/main.css')
+    link(rel='stylesheet', href='/css/animate.css')
+    //if lte IE 8
+      link(rel='stylesheet', href='/css/ie8.css')
+    //if lte IE 9
+      link(rel='stylesheet', href='/css/ie9.css')
+  body.landing
+    // Page Wrapper
     #page-wrapper
       // Header
-      #header-wrapper
-        #header.container
-          // Logo
-          h1#logo
-            a(href='index.html') Strongly Typed
-          p A responsive HTML5 site template. Manufactured by HTML5 UP.
-          // Nav
-          nav#nav
-            ul
-              li
-                a.icon.fa-home(href='index.html')
-                  span Introduction
-              li
-                a.icon.fa-bar-chart-o(href='#')
-                  span Dropdown
+      header#header.alt
+        h1
+          a(href='index.html') Oyster World
+        nav#nav
+          ul
+            li.special
+              a.menuToggle(href='#menu')
+                span Menu
+              #menu
                 ul
                   li
-                    a(href='#') Lorem ipsum dolor
+                    a(href='index.html') Home
                   li
-                    a(href='#') Magna phasellus
+                    a(href='about.html') About
                   li
-                    a(href='#') Etiam dolore nisl
+                    a(href='elements.html') Elements
                   li
-                    a(href='#') Phasellus consequat
-                    ul
-                      li
-                        a(href='#') Magna phasellus
-                      li
-                        a(href='#') Etiam dolore nisl
-                      li
-                        a(href='#') Phasellus consequat
+                    a(href='#') Sign Up
                   li
-                    a(href='#') Veroeros feugiat
-              li
-                a.icon.fa-cog(href='left-sidebar.html')
-                  span Left Sidebar
-              li
-                a.icon.fa-retweet(href='right-sidebar.html')
-                  span Right Sidebar
-              li
-                a.icon.fa-sitemap(href='no-sidebar.html')
-                  span No Sidebar
-      // Features
-      #features-wrapper
-        section#features.container
-          header
-            h2
-              | Gentlemen, behold! This is 
-              strong Strongly Typed
-              | !
-          .row
-            .4u(class='12u(mobile)')
-              // Feature
-              section
-                a.image.featured(href='#')
-                  img(src='images/pic01.jpg', alt='')
-                header
-                  h3 Okay, so what is this?
-                p
-                  | This is 
-                  strong Strongly Typed
-                  | , a free, fully responsive site template
-                  | 										by 
-                  a(href='http://html5up.net') HTML5 UP
-                  | . Free for personal and commercial use under the
-                  a(href='http://html5up.net/license') CCA 3.0 license
-                  | .
-            .4u(class='12u(mobile)')
-              // Feature
-              section
-                a.image.featured(href='#')
-                  img(src='images/pic02.jpg', alt='')
-                header
-                  h3 Nice! What is HTML5 UP?
-                p
-                  a(href='http://html5up.net') HTML5 UP
-                  |  is a side project of 
-                  a(href='http://n33.co') AJ’s
-                  |  (= me).
-                  | 										I started it as a way to both test my 
-                  strong skel
-                  |  framework and sharpen up my coding
-                  | 										and design skills a bit.
-            .4u(class='12u(mobile)')
-              // Feature
-              section
-                a.image.featured(href='#')
-                  img(src='images/pic03.jpg', alt='')
-                header
-                  h3 Skel? What's that?
-                p
-                  strong Skel
-                  |  is a lightweight framework for building responsive
-                  | 										sites and apps. All of my stuff at 
-                  a(href='http://html5up.net') HTML5 UP
-                  |  (including this
-                  | 										one) are built on this framework.
+                    a(href='#') Log In
+      // Banner
+      section#banner
+        .inner
+          h2 Oyster World
+          p
+            | Learn how to travel with our travel consulting,
+            br
+            | 							get excited about the world with our Podcasts,
+            br
+            | 							explore diversity in our backyards at our monthly 
+            a(href='http://www.meetup.com/Meet-Eat-by-Oyster-World/') Meet & Eats
+            br
+            |  and enjoy the Oyster experience!
           ul.actions
             li
-              a.button.icon.fa-file(href='#') Tell Me More
-      // Banner
-      #banner-wrapper
+              a.button.special(href='#') Find Out More
+        a.more.scrolly(href='#one') Learn More
+        
+        
+      // Three
+      section#three.wrapper.style3.special
+          header.major
+            .image
+              img(src='/images/slice/desktop/OurServices_Header.png', alt='')
+          ul.features
+            li.icon
+              img(src='/images/slice/desktop/OurServices_ME_Icon2.png', alt='')
+              img(src='/images/slice/desktop/OurServices_ME_Header2.png', alt='')
+              p
+                | Our meetup that's focused on sharing foreign foods with friends new and old. Fill-up with the diverse cuisine offerings and get a taste of the culture in your backyard.
+              img(src='/images/slice/desktop/OurServices_Meetup_ColumbusWarning.png', alt='')
+              a.button.special(href='#') Join the Meetup
+            li.icon
+              img(src='/images/slice/desktop/OurServices_OWR_Icon2.png', alt='')
+              img(src='/images/slice/desktop/OurServices_OWR_Header2.png', alt='')
+              p
+                | We are not afraid to travel to uncharted waters in Oyster World Radio: a series of interviews, language barriers, social faux pas and political rants. Learn how travel betters lives and see one tourist's transformation into a traveller.
+              a.button.special(href='#') Coming soon
+            li.icon
+              img(src='/images/slice/desktop/OurServices_OC_Icon2.png', alt='')
+              img(src='/images/slice/desktop/OurServices_OC_Header2.png', alt='')
+              p
+                | Not your every-day travel consultant, but rather the helm to authentic travel spots. We are dedicated to keeping you out of tourist traps and limiting the lost in translation moments of your trip with one-on-one, pre-travel guidance.
+              a.button.special(href='#') Coming soon
+      
+       
+      // Two
+      section#two.wrapper.alt.style2
         .inner
-          section#banner.container
-            p
-              | Use this space for 
-              strong profound thoughts
-              | .
-              br
-              | 							Or an enormous ad. Whatever.
-      // Main
-      #main-wrapper
-        #main.container
-          .row
-            // Content
-            #content.8u(class='12u(mobile)')
-              // Post
-              article.box.post
-                header
-                  h2
-                    a(href='#')
-                      | I don’t want to say 
-                      strong it’s the aliens
-                      |  ...
-                      br
-                      | 												but it’s the aliens.
-                a.image.featured(href='#')
-                  img(src='images/pic04.jpg', alt='')
-                h3 I mean isn't it possible?
-                p
-                  | Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit
-                  | ligula vel quam viverra sit amet mollis tortor congue. Sed quis mauris
-                  | sit amet magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada
-                  | in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
-                  | magna tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros
-                  | consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-                  | justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet
-                  | mollis tortor congue. Sed quis mauris sit amet magna accumsan tristique.
-                  | Curabitur leo nibh, rutrum eu malesuada in, tristique at erat.
-                ul.actions
-                  li
-                    a.button.icon.fa-file(href='#') Continue Reading
-              // Post
-              article.box.post
-                header
-                  h2
-                    a(href='#')
-                      | By the way, many thanks to 
-                      strong regularjane
-                      | 												for these awesome demo photos
-                a.image.featured(href='#')
-                  img(src='images/pic05.jpg', alt='')
-                h3 You should probably check out her work
-                p
-                  | Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit
-                  | ligula vel quam viverra sit amet mollis tortor congue. Sed quis mauris
-                  | sit amet magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada
-                  | in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
-                  | consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-                  | in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
-                  | magna tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros
-                  | consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-                  | justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet
-                  | mollis tortor congue. Sed quis mauris sit amet magna accumsan tristique.
-                  | Curabitur leo nibh, rutrum eu malesuada in, tristique at erat.
-                p
-                  | Erat lorem ipsum veroeros consequat magna tempus lorem ipsum consequat
-                  | Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit ligula
-                  | vel quam viverra sit amet mollis tortor congue. Sed quis mauris sit amet
-                  | magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada in,
-                  | tristique at erat. Curabitur leo nibh, rutrum eu malesuada  in, tristique
-                  | at erat lorem ipsum dolor sit amet lorem ipsum sed consequat magna
-                  | tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros consequat
-                  | magna tempus
-                ul.actions
-                  li
-                    a.button.icon.fa-file(href='#') Continue Reading
-            // Sidebar
-            #sidebar.4u(class='12u(mobile)')
-              // Excerpts
-              section
-                ul.divided
-                  li
-                    // Excerpt
-                    article.box.excerpt
-                      header
-                        span.date July 30
-                        h3
-                          a(href='#') Just another post
-                      p
-                        | Lorem ipsum dolor odio facilisis convallis. Etiam non nunc vel est
-                        | suscipit convallis non id orci lorem ipsum sed magna consequat feugiat lorem dolore.
-                  li
-                    // Excerpt
-                    article.box.excerpt
-                      header
-                        span.date July 28
-                        h3
-                          a(href='#') And another post
-                      p
-                        | Lorem ipsum dolor odio facilisis convallis. Etiam non nunc vel est
-                        | suscipit convallis non id orci lorem ipsum sed magna consequat feugiat lorem dolore.
-                  li
-                    // Excerpt
-                    article.box.excerpt
-                      header
-                        span.date July 24
-                        h3
-                          a(href='#') One more post
-                      p
-                        | Lorem ipsum dolor odio facilisis convallis. Etiam non nunc vel est
-                        | suscipit convallis non id orci lorem ipsum sed magna consequat feugiat lorem dolore.
-              // Highlights
-              section
-                ul.divided
-                  li
-                    // Highlight
-                    article.box.highlight
-                      header
-                        h3
-                          a(href='#') Something of note
-                      a.image.left(href='#')
-                        img(src='images/pic06.jpg', alt='')
-                      p
-                        | Phasellus  sed laoreet massa id justo mattis pharetra. Fusce suscipit ligula vel quam
-                        | viverra sit amet mollis tortor congue magna lorem ipsum dolor et quisque ut odio facilisis
-                        | convallis. Etiam non nunc vel est suscipit convallis non id orci. Ut interdum tempus
-                        | facilisis convallis. Etiam non nunc vel est suscipit convallis non id orci.
-                      ul.actions
-                        li
-                          a.button.icon.fa-file(href='#') Learn More
-                  li
-                    // Highlight
-                    article.box.highlight
-                      header
-                        h3
-                          a(href='#') Something of less note
-                      a.image.left(href='#')
-                        img(src='images/pic07.jpg', alt='')
-                      p
-                        | Phasellus  sed laoreet massa id justo mattis pharetra. Fusce suscipit ligula vel quam
-                        | viverra sit amet mollis tortor congue magna lorem ipsum dolor et quisque ut odio facilisis
-                        | convallis. Etiam non nunc vel est suscipit convallis non id orci. Ut interdum tempus
-                        | facilisis convallis. Etiam non nunc vel est suscipit convallis non id orci.
-                      ul.actions
-                        li
-                          a.button.icon.fa-file(href='#') Learn More
-      // Footer
-      #footer-wrapper
-        #footer.container
-          header
+        section.spotlight
+          .image
+            img(src='/images/slice/Archive/Omar.jpg', alt='')
+          .content
             h2
-              | Questions or comments? 
-              strong Get in touch:
-          .row
-            .6u(class='12u(mobile)')
-              section
-                form(method='post', action='#')
-                  .row(class='50%')
-                    .6u(class='12u(mobile)')
-                      input(name='name', placeholder='Name', type='text')
-                    .6u(class='12u(mobile)')
-                      input(name='email', placeholder='Email', type='text')
-                  .row(class='50%')
-                    .12u
-                      textarea(name='message', placeholder='Message')
-                  .row(class='50%')
-                    .12u
-                      a.form-button-submit.button.icon.fa-envelope(href='#') Send Message
-            .6u(class='12u(mobile)')
-              section
-                p
-                  | Erat lorem ipsum veroeros consequat magna tempus lorem ipsum consequat Phaselamet
-                  | mollis tortor congue. Sed quis mauris sit amet magna accumsan tristique. Curabitur
-                  | leo nibh, rutrum eu malesuada.
-                .row
-                  .6u(class='12u(mobile)')
-                    ul.icons
-                      li.icon.fa-home
-                        | 1234 Somewhere Road
-                        br
-                        | 													Nashville, TN 00000
-                        br
-                        | 													USA
-                      li.icon.fa-phone
-                        | (000) 000-0000
-                      li.icon.fa-envelope
-                        a(href='#') info@untitled.tld
-                  .6u(class='12u(mobile)')
-                    ul.icons
-                      li.icon.fa-twitter
-                        a(href='#') @untitled-tld
-                      li.icon.fa-instagram
-                        a(href='#') instagram.com/untitled-tld
-                      li.icon.fa-dribbble
-                        a(href='#') dribbble.com/untitled-tld
-                      li.icon.fa-facebook
-                        a(href='#') facebook.com/untitled-tld
-        #copyright.container
-          ul.links
-            li © Untitled. All rights reserved.
+              | Magna primis lobortis
+              br
+              | 								sed ullamcorper
+            p
+              | Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
+        section.spotlight
+          .image
+            img(src='/images/slice/Archive/Shannon.jpg', alt='')
+          .content
+            h2
+              | Tortor dolore feugiat
+              br
+              | 								elementum magna
+            p
+              | Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
+        section.spotlight
+          .image
+            img(src='/images/slice/Archive/Nate.jpg', alt='')
+          .content
+            h2
+              | Augue eleifend aliquet
+              br
+              | 								sed condimentum
+            p
+              | Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
+
+      // One       
+      
+      // CTA
+      section#cta.wrapper.style4
+        .inner
+          header
+            h2 Arcue ut vel commodo
+            p
+              | Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet eleifend fringilla.
+          ul.actions.vertical
             li
-              | Design: 
-              a(href='http://html5up.net') HTML5 UP
+              a.button.fit.special(href='#') Activate
+            li
+              a.button.fit(href='#') Learn More
+      // Footer
+      footer#footer
+        ul.icons
+          li
+            a.icon.fa-twitter(href='#')
+              span.label Twitter
+          li
+            a.icon.fa-facebook(href='#')
+              span.label Facebook
+          li
+            a.icon.fa-instagram(href='#')
+              span.label Instagram
+          li
+            a.icon.fa-dribbble(href='#')
+              span.label Dribbble
+          li
+            a.icon.fa-envelope-o(href='#')
+              span.label Email
+        ul.copyright
+          li © Untitled
+          li
+            | Scraper: 
+            a(href='') Frying Pan
     // Scripts
-    script(src='assets/js/jquery.min.js')
-    script(src='assets/js/jquery.dropotron.min.js')
-    script(src='assets/js/skel.min.js')
-    script(src='assets/js/skel-viewport.min.js')
-    script(src='assets/js/util.js')
+    script(src='/js/jquery.min.js')
+    script(src='/js/jquery.scrollex.min.js')
+    script(src='/js/jquery.scrolly.min.js')
+    script(src='/js/skel.min.js')
+    script(src='/js/util.js')
     //if lte IE 8
-      script(src='assets/js/ie/respond.min.js')
-    script(src='assets/js/main.js')
+      script(src='/js/ie/respond.min.js')
+    script(src='/js/main.js')
+   script(src='/js/ie/respond.min.js')
+    script(src='/js/main.js')
 
 
