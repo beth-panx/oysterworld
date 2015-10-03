@@ -4,11 +4,6 @@
 @import 'font-awesome.min.css';
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic');
 
-/*
-	Spectral by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
 	@import 'libs/skel';
 
@@ -1395,6 +1390,23 @@
 				@include breakpoint(small) {
 					font-size: 0.8em;
 				}
+				
+				&.oysterLogo {
+					outline: 0;
+					position: relative;
+					background-position: 4.85em 1em;
+					background-repeat: no-repeat;
+					background-image: url('images/svg/Logo_OysterWorld.svg');
+					border: 0;
+					cursor: pointer;
+					display: block;
+					height: 3em;
+					position: absolute;
+					right: 0;
+					top: 0;
+					vertical-align: middle;
+					width: 7em;
+				}
 			}
 		}
 
@@ -1826,3 +1838,5 @@
 			}
 		}
 	}
+	
+/* Logo */
