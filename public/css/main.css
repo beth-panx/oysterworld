@@ -1679,6 +1679,7 @@
 		padding: 0 1em;
 		text-decoration: none;
 		width: 100%;
+		margin-bottom: 1em;
 	}
 
 		input[type="text"]:invalid,

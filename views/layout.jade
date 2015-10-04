@@ -10,6 +10,7 @@ html
       script(src='assets/js/ie/html5shiv.js')
     link(rel='stylesheet', href='/css/main.css')
     link(rel='stylesheet', href='/css/animate.css')
+    link(rel='shortcut icon' href='favicon.ico' type='image/x-icon')
     //if lte IE 8
       link(rel='stylesheet', href='/css/ie8.css')
     //if lte IE 9
@@ -32,9 +33,9 @@ html
                   li
                     a(href='index.html') Home
                   li
-                    a(href='about.html') About
+                    a(href='#two') About Us
                   li
-                    a(href='elements.html') Elements
+                    a(href='#') Podcasts
                   li
                     a(href='#') Sign Up
                   li
@@ -49,12 +50,12 @@ html
             | 							get excited about the world with our Podcasts,
             br
             | 							explore diversity in our backyards at our monthly 
-            a(href='http://www.meetup.com/Meet-Eat-by-Oyster-World/') Meet & Eats
+            a(href='http://www.meetup.com/Meet-Eat-by-Oyster-World/') Meet & Eat
             br
             |  and enjoy the Oyster experience!
           ul.actions
             li
-              a.button.special(href='#') Find Out More
+              a.button.special(href='http://www.meetup.com/Meet-Eat-by-Oyster-World/') Find Out More
         a.more.scrolly(href='#one') Learn More
         
         
@@ -70,7 +71,7 @@ html
               p
                 | Our meetup that's focused on sharing foreign foods with friends new and old. Fill-up with the diverse cuisine offerings and get a taste of the culture in your backyard.
               img(src='/images/slice/desktop/OurServices_Meetup_ColumbusWarning.png', alt='')
-              a.button.special(href='#') Join the Meetup
+              a.button.special(href='http://www.meetup.com/Meet-Eat-by-Oyster-World/') Join the Meetup
             li.icon
               img(src='/images/slice/desktop/OurServices_OWR_Icon2.png', alt='')
               img(src='/images/slice/desktop/OurServices_OWR_Header2.png', alt='')
@@ -119,20 +120,25 @@ html
             p
               | He is our Chief Executive Officer, aka Chief Ginormous Boss. He studied Mechanical Engineering with and Enterpreneurship minor, which got him ready to do some fancy facilitating behind the scenes. Also, his voice is so low rumor has it he speaks whale.
 
-      // One       
+      // Three       
       
       // CTA
       section#cta.wrapper.style4
         .inner
-          header
-            h2 Arcue ut vel commodo
+          header.major
+            .image
+              img(src='/images/slice/desktop/ContactUs_Header_TalkToAnOyster.png', alt='')
             p
-              | Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet eleifend fringilla.
-          ul.actions.vertical
-            li
-              a.button.fit.special(href='#') Activate
-            li
-              a.button.fit(href='#') Learn More
+              | For more information about our services, what's coming down our pipeline, or any travel needs please contact us below.
+          form(action='/contact', name='contactus', id='contactus', method='post')
+              input(type='text', placeholder='FIRST NAME', required='', autocomplete='off')
+              input(type='text', placeholder='LAST NAME', required='', autocomplete='off')
+              input(type='email', placeholder='EMAIL', required='', autocomplete='off')
+              textarea(rows='4', placeholder='WHAT CAN WE HELP YOU WITH?')
+              input.button.fit.special(type='submit', name='submit', value='SUBMIT')
+              // ul.actions.vertical
+              //   li
+              //     a.button.fit.special(type='submit') Submit
       // Footer
       footer#footer
         ul.icons
