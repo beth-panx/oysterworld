@@ -2444,12 +2444,18 @@
 			.features li:nth-last-child(2) {
 				border-bottom-left-radius: 3px;
 			}
+			
+			.features li img {
+				margin: 1em auto;
+				display: block;
+			}
 
 			@media screen and (max-width: 980px) {
 
 				.features li {
 					padding: 3em 2em 1em 2em ;
 					text-align: center;
+					width: 100%;
 				}
 
 					.features li:before {
@@ -2504,13 +2510,22 @@
 			}
 
 		.spotlight .content {
-			padding: 2em 4em 0.1em 4em ;
+			padding: 1em 0.2em 0.1em 1em ;
 			-moz-order: 2;
 			-webkit-order: 2;
 			-ms-order: 2;
 			order: 2;
 			max-width: 48em;
 			width: 60%;
+		}
+		
+			.spotlight .content img {
+				width: 13em;
+			}
+		
+		.spotlight .content.pullRight {
+			text-align: right;
+    		padding: 1em 1em 0.1em 0.2em;
 		}
 
 		.spotlight:nth-child(2n) {
@@ -2571,9 +2586,20 @@
 			}
 
 		}
+		
+		@media screen and (max-width: 736px) {
+			
+			.spotlight .image {
+				width: 55%;
+			}
 
-		@media screen and (max-width: 980px) {
+			.spotlight .content {
+				width: 45%;
+			}
+		}
 
+		@media screen and (max-width: 480px) {
+			
 			.spotlight {
 				display: block;
 			}
@@ -2581,26 +2607,19 @@
 				.spotlight br {
 					display: none;
 				}
-
+				
 				.spotlight .image {
 					width: 100%;
 				}
 
-				.spotlight .content {
-					padding: 4em 3em 2em 3em ;
+				.spotlight .content,
+				.spotlight .content.pullRight {
+					
+					padding: 3em 2em 1em 2em ;
 					max-width: none;
 					text-align: center;
 					width: 100%;
 				}
-
-		}
-
-		@media screen and (max-width: 736px) {
-
-			.spotlight .content {
-				padding: 3em 2em 1em 2em ;
-			}
-
 		}
 
 /* Wrapper */
@@ -2791,6 +2810,15 @@
 		.wrapper.style2 {
 			background-color: #2e3842;
 		}
+			.wrapper.style2 header.major {
+				text-align: center;
+				background-color: rgba(0, 0, 0, 0.225);
+				padding: 2em 0 2em 0;
+				margin: 0;
+			}
+				.wrapper.style2 header.major img {
+					width: 19em;
+				}
 
 		.wrapper.style3 {
 			background-color: #E8E8DA;
@@ -2827,6 +2855,10 @@
 
 			.wrapper.style3 header.major p {
 				color: #d3d4e4;
+			}
+			
+			.wrapper.style3 header.major img {
+				width: 19em;
 			}
 
 			.wrapper.style3 label {
@@ -3276,12 +3308,20 @@
 				height: inherit;
 				line-height: inherit;
 			}
+			
+				#header h1 a img {
+					width: 3em;
+				}
 
 				@media screen and (max-width: 736px) {
 
 					#header h1 a {
 						font-size: 0.8em;
 					}
+						
+						#header h1 a img {
+							width: 3.75em;
+						}
 
 				}
 

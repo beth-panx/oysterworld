@@ -20,7 +20,8 @@ html
       // Header
       header#header.alt
         h1
-          a.oysterLogo(href='index.html') Oyster World
+          a(href='index.html')
+            img(src='/images/slice/desktop/Footer_Logo.jpg' alt='')
         nav#nav
           ul
             li.special
@@ -87,6 +88,9 @@ html
       // Two
       section#two.wrapper.alt.style2
         .inner
+        header.major
+          .image
+            img(src='/images/slice/desktop/AboutUs_Header_MeetTheCrew.png', alt='')
         section.spotlight
           .image
             img(src='/images/slice/Archive/Omar.jpg', alt='')
@@ -99,7 +103,7 @@ html
         section.spotlight
           .image
             img(src='/images/slice/Archive/Shannon.jpg', alt='')
-          .content
+          .content.pullRight
             img(src='/images/slice/Archive/Shannon Name.png', alt='')
             h2
               | Meet the CMO
@@ -148,10 +152,13 @@ html
             a.icon.fa-envelope-o(href='#')
               span.label Email
         ul.copyright
-          li © Oyster World
+          li © 2015 Oyster World, LLC 
+            a(href='') Term of Use
           li
-            | Scraper: 
-            a(href='') Frying Pan
+            | 
+            a(href='') Privacy Policy
+          li Contact:
+            a(href='') 614-xxx-xxxx
     // Scripts
     script(src='/js/jquery.min.js')
     script(src='/js/jquery.scrollex.min.js')

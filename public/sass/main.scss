@@ -888,6 +888,11 @@
 			position: relative;
 			text-align: left;
 			width: 50%;
+			
+			img {
+				margin: 1em auto;
+    			display: block;
+			}
 
 			@for $i from 1 through _misc(max-features) {
 				$j: 0.035 * $i;
@@ -925,6 +930,7 @@
 			@include breakpoint(medium) {
 				@include padding(3em, 2em);
 				text-align: center;
+				width: 100%;
 
 				&:before {
 					left: 0;
@@ -1001,14 +1007,14 @@
 			}
 
 			.image {
-				width: 100%;
+				width: 45%;
 			}
 
 			.content {
 				@include padding(4em, 3em);
 				max-width: none;
 				text-align: center;
-				width: 100%;
+				width: 55%;
 			}
 		}
 
@@ -1386,26 +1392,17 @@
 				display: block;
 				height: inherit;
 				line-height: inherit;
+				
+				img {
+					width: 3em;
+					
+					@include breakpoint(small) {
+						width: 3.75em;
+					}
+				}
 
 				@include breakpoint(small) {
 					font-size: 0.8em;
-				}
-				
-				&.oysterLogo {
-					outline: 0;
-					position: relative;
-					background-position: 4.85em 1em;
-					background-repeat: no-repeat;
-					background-image: url('images/svg/Logo_OysterWorld.svg');
-					border: 0;
-					cursor: pointer;
-					display: block;
-					height: 3em;
-					position: absolute;
-					right: 0;
-					top: 0;
-					vertical-align: middle;
-					width: 7em;
 				}
 			}
 		}
@@ -1439,7 +1436,7 @@
 						&.menuToggle {
 							outline: 0;
 							position: relative;
-
+							
 							&:after {
 								background-image: url('images/bars.svg');
 								background-position: right center;
