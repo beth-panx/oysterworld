@@ -26,6 +26,9 @@
 					$body.removeClass('is-loading');
 				}, 100);
 			});
+			
+		// Initialize wowjs
+			new WOW().init();
 
 		// Mobile?
 			if (skel.vars.mobile)

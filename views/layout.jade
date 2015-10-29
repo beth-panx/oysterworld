@@ -62,10 +62,10 @@ html
       // One
       section#one.wrapper.style3.special
           header.major
-            .image.animated.pulse
+            .image.wow.fadeIn(data-wow-duration='2s', data-wow-delay='100ms')
               img(src='/images/slice/desktop/OurServices_Header.png', alt='')
           ul.features
-            li
+            li.wow.fadeInUp(data-wow-offset='30', data-wow-duration='2s', data-wow-delay='0ms')
               img(src='/images/slice/desktop/OurServices_ME_Icon2.png', alt='')
               h1
                 | Meet & Eat
@@ -80,7 +80,7 @@ html
                   br
                   | in Columbus, Ohio
               a.button.special(href='http://www.meetup.com/Meet-Eat-by-Oyster-World/') Join the Meetup
-            li
+            li.wow.fadeInUp(data-wow-offset='30', data-wow-duration='2s', data-wow-delay='100ms')
               img(src='/images/slice/desktop/OurServices_OWR_Icon2.png', alt='')
               h1
                 | Oyster World
@@ -89,7 +89,7 @@ html
               p
                 | We are not afraid to travel to uncharted waters in Oyster World Radio: a series of interviews, language barriers, social faux pas and political rants. Learn how travel betters lives and see one tourist's transformation into a traveller.
               a.button.special.grey(href='#') Coming soon
-            li
+            li.wow.fadeInUp(data-wow-offset='30', data-wow-duration='2s', data-wow-delay='200ms')
               img(src='/images/slice/desktop/OurServices_OC_Icon2.png', alt='')
               h1
                 | Oyster Travel
@@ -104,13 +104,13 @@ html
       section#two.wrapper.alt.style2
         .inner
         header.major
-          .image
+          .image.wow.fadeIn(data-wow-duration='2s', data-wow-delay='100ms')
             img(src='/images/slice/desktop/AboutUs_Header_MeetTheCrew.png', alt='')
         section.spotlight
           .image
             img(src='/images/slice/desktop/Omar_profile.jpg', alt='')
           .content
-            img(src='/images/slice/desktop/Omar_name.png', alt='')
+            img(src='/images/slice/desktop/Omar_name.png', alt='').wow.pulse(data-wow-duration='2s', data-wow-delay='200ms')
             h2
               | Meet the CTO
             p
@@ -119,7 +119,7 @@ html
           .image
             img(src='/images/slice/desktop/Shannon_profile.jpg', alt='')
           .content.pullRight
-            img(src='/images/slice/desktop/Shannon_name.png', alt='')
+            img(src='/images/slice/desktop/Shannon_name.png', alt='').wow.pulse(data-wow-duration='2s', data-wow-delay='200ms')
             h2
               | Meet the CMO
             p
@@ -128,7 +128,7 @@ html
           .image
             img(src='/images/slice/desktop/Nate_profile.jpg', alt='')
           .content
-            img(src='/images/slice/desktop/Nate_name.png', alt='')
+            img(src='/images/slice/desktop/Nate_name.png', alt='').wow.pulse(data-wow-duration='2s', data-wow-delay='200ms')
             h2
               | Meet the CEO
             p
@@ -140,16 +140,16 @@ html
       section#cta.wrapper.style4
         .inner
           header.major
-            .image
+            .image.wow.fadeIn(data-wow-duration='2s', data-wow-delay='100ms')
               img(src='/images/slice/desktop/Talk-to-an-Oyster.png', alt='')
-            p
+            p.wow.fadeInUp(data-wow-offset='40', data-wow-duration='2s', data-wow-delay='200ms')
               | For more information about our services, what's coming down our pipeline, or any travel needs please contact us below.
             form(action='/contact', name='contactus', id='contactus', method='post')
-                input(type='text', placeholder='FIRST NAME', required='', autocomplete='off')
-                input(type='text', placeholder='LAST NAME', required='', autocomplete='off')
-                input(type='email', placeholder='EMAIL', required='', autocomplete='off')
-                textarea(rows='4', placeholder='WHAT CAN WE HELP YOU WITH? (OPTIONAL)')
-                input.button.fit.special(type='submit', name='submit', value='SUBMIT')
+                input(type='text', placeholder='FIRST NAME', required='', autocomplete='off').wow.fadeInUp(data-wow-offset='40', data-wow-duration='2s', data-wow-delay='300ms')
+                input(type='text', placeholder='LAST NAME', required='', autocomplete='off').wow.fadeInUp(data-wow-offset='40', data-wow-duration='2s', data-wow-delay='400ms')
+                input(type='email', placeholder='EMAIL', required='', autocomplete='off').wow.fadeInUp(data-wow-offset='40', data-wow-duration='2s', data-wow-delay='500ms')
+                textarea(rows='4', placeholder='WHAT CAN WE HELP YOU WITH? (OPTIONAL)').wow.fadeInUp(data-wow-offset='40', data-wow-duration='2s', data-wow-delay='600ms')
+                input.button.fit.special(type='submit', name='submit', value='SUBMIT').wow.fadeInUp(data-wow-offset='40', data-wow-duration='2s', data-wow-delay='700ms')
               // ul.actions.vertical
               //   li
               //     a.button.fit.special(type='submit') Submit
@@ -180,6 +180,7 @@ html
     script(src='/js/jquery.scrolly.min.js')
     script(src='/js/skel.min.js')
     script(src='/js/util.js')
+    script(src='/js/wow.min.js')
     //if lte IE 8
       script(src='/js/ie/respond.min.js')
     script(src='/js/main.js')
