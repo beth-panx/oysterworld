@@ -2464,7 +2464,7 @@
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		padding: 1em 2em 1em 4em;
+		padding: 1em 4em;
 		background-color: #040016;
 	}
 		
@@ -2510,7 +2510,7 @@
 			-webkit-flex-direction: row-reverse;
 			-ms-flex-direction: row-reverse;
 			flex-direction: row-reverse;
-			padding: 1em 4em 1em 2em;
+			padding: 1em 4em;
 		}
 
 		@media screen and (max-width: 1280px) {
@@ -2781,7 +2781,7 @@
 			.wrapper.style2 header.major {
 				text-align: center;
 				background-color: #040016;
-				padding: 2em 0 2em 0;
+				padding: 3em 0 2em 0;
 				margin: 0;
 			}
 				.wrapper.style2 header.major img {
