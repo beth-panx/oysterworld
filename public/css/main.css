@@ -2469,7 +2469,7 @@
 	}
 		
 		.spotlight:last-child {
-			padding-bottom: 3em;
+			padding-bottom: 4em;
 		}
 
 		.spotlight .image {
@@ -2547,12 +2547,13 @@
 		@media screen and (max-width: 686px) {
 			
 			.spotlight,
-			.spotlight:nth-child(2n) {
+			.spotlight:nth-child(2n),
+			.spotlight:last-child {
 				display: block;
 				padding: 0 4em;
 				text-align: center;
 			}
-
+			
 				.spotlight br {
 					display: none;
 				}
