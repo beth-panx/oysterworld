@@ -33,13 +33,13 @@ html
                   li
                     a(href='index.html') Home
                   li
-                    a(href='#two') About Us
+                    a(href='#one') Our Services
                   li
-                    a(href='#') Podcasts
+                    a(href='#two') Meet the Crew
                   li
-                    a(href='#') Sign Up
+                    a(href='#cta') Talk to An Oyster
                   li
-                    a(href='#') Log In
+                    a(href='#footer') Social
       // Banner
       section#banner
         .inner
@@ -50,40 +50,54 @@ html
             | 							get excited about the world with our Podcasts,
             br
             | 							explore diversity in our backyards at our monthly 
-            a(href='http://www.meetup.com/Meet-Eat-by-Oyster-World/') Meet & Eat
+            a(href='http://www.meetup.com/Meet-Eat-by-Oyster-World/' target='_blank') Meet & Eat
             br
             |  and enjoy the Oyster experience!
           ul.actions
             li
-              a.button.special(href='http://www.meetup.com/Meet-Eat-by-Oyster-World/') Find Out More
+              a.button.special.scrolly(href='#cta') Join Our World
         a.more.scrolly(href='#one') Learn More
         
         
       // One
       section#one.wrapper.style3.special
           header.major
-            .image
+            .image.animated.pulse
               img(src='/images/slice/desktop/OurServices_Header.png', alt='')
           ul.features
-            li.icon
+            li
               img(src='/images/slice/desktop/OurServices_ME_Icon2.png', alt='')
-              img(src='/images/slice/desktop/OurServices_ME_Header2.png', alt='')
-              p
+              h1
+                | Meet & Eat
+              h3
+                | Ethnic Cuisine
+              p.meetup-section
                 | Our meetup that's focused on sharing foreign foods with friends new and old. Fill-up with the diverse cuisine offerings and get a taste of the culture in your backyard.
-              img(src='/images/slice/desktop/OurServices_Meetup_ColumbusWarning.png', alt='')
+              p.meetup-section
+                img.meetup-logo(src='/images/slice/desktop/MeetupLogo.png', alt='')
+                span.meetup-description
+                  | Currently offered
+                  br
+                  | in Columbus, Ohio
               a.button.special(href='http://www.meetup.com/Meet-Eat-by-Oyster-World/') Join the Meetup
-            li.icon
+            li
               img(src='/images/slice/desktop/OurServices_OWR_Icon2.png', alt='')
-              img(src='/images/slice/desktop/OurServices_OWR_Header2.png', alt='')
+              h1
+                | Oyster World
+              h3
+                | Radio
               p
                 | We are not afraid to travel to uncharted waters in Oyster World Radio: a series of interviews, language barriers, social faux pas and political rants. Learn how travel betters lives and see one tourist's transformation into a traveller.
-              a.button.special(href='#') Coming soon
-            li.icon
+              a.button.special.grey(href='#') Coming soon
+            li
               img(src='/images/slice/desktop/OurServices_OC_Icon2.png', alt='')
-              img(src='/images/slice/desktop/OurServices_OC_Header2.png', alt='')
+              h1
+                | Oyster Travel
+              h3
+                | Consultants
               p
                 | Not your every-day travel consultant, but rather the helm to authentic travel spots. We are dedicated to keeping you out of tourist traps and limiting the lost in translation moments of your trip with one-on-one, pre-travel guidance.
-              a.button.special(href='#') Coming soon
+              a.button.special.grey(href='#') Coming soon
       
        
       // Two
@@ -96,7 +110,7 @@ html
           .image
             img(src='/images/slice/Archive/Omar.jpg', alt='')
           .content
-            img(src='/images/slice/Archive/Omar Name.png', alt='')
+            img(src='/images/slice/desktop/Omar.png', alt='')
             h2
               | Meet the CTO
             p
@@ -105,16 +119,16 @@ html
           .image
             img(src='/images/slice/Archive/Shannon.jpg', alt='')
           .content.pullRight
-            img(src='/images/slice/Archive/Shannon Name.png', alt='')
+            img(src='/images/slice/desktop/Shannon.png', alt='')
             h2
               | Meet the CMO
             p
-              | She is out Chief Marketing Officer because she studied Visual Communication Design. She deserves a high-five for all the creative bits of your Oyster experience. She's also not sure how she feels about narcissisticks, but groupies are pretty great.'
+              | She is our Chief Marketing Officer because she studied Visual Communication Design. She deserves a high-five for all the creative bits of your Oyster experience. She's also not sure how she feels about narcissisticks, but groupies are pretty great.'
         section.spotlight
           .image
             img(src='/images/slice/Archive/Nate.jpg', alt='')
           .content
-            img(src='/images/slice/Archive/Nate Name.png', alt='')
+            img(src='/images/slice/desktop/Nate.png', alt='')
             h2
               | Meet the CEO
             p
@@ -127,14 +141,14 @@ html
         .inner
           header.major
             .image
-              img(src='/images/slice/desktop/ContactUs_Header_TalkToAnOyster.png', alt='')
+              img(src='/images/slice/desktop/Talk-to-an-Oyster.png', alt='')
             p
               | For more information about our services, what's coming down our pipeline, or any travel needs please contact us below.
             form(action='/contact', name='contactus', id='contactus', method='post')
                 input(type='text', placeholder='FIRST NAME', required='', autocomplete='off')
                 input(type='text', placeholder='LAST NAME', required='', autocomplete='off')
                 input(type='email', placeholder='EMAIL', required='', autocomplete='off')
-                textarea(rows='4', placeholder='WHAT CAN WE HELP YOU WITH?')
+                textarea(rows='4', placeholder='WHAT CAN WE HELP YOU WITH? (OPTIONAL)')
                 input.button.fit.special(type='submit', name='submit', value='SUBMIT')
               // ul.actions.vertical
               //   li
@@ -143,19 +157,16 @@ html
       footer#footer
         ul.icons
           li
-            a.icon.fa-twitter(href='#')
+            a.icon.fa-twitter(href='https://twitter.com/NathanOyster')
               span.label Twitter
           li
-            a.icon.fa-facebook(href='#')
+            a.icon.fa-facebook(href='https://www.facebook.com/oysteryourworld/')
               span.label Facebook
           li
             a.icon.fa-instagram(href='#')
               span.label Instagram
           li
-            a.icon.fa-dribbble(href='#')
-              span.label Dribbble
-          li
-            a.icon.fa-envelope-o(href='#')
+            a.icon.fa-envelope-o(href='mailto:nathan@oysteryourworld.com')
               span.label Email
         ul.copyright
           li © 2015 Oyster World, LLC 
@@ -163,8 +174,6 @@ html
           li
             | 
             a(href='') Privacy Policy
-          li Contact:
-            a(href='') 614-xxx-xxxx
     // Scripts
     script(src='/js/jquery.min.js')
     script(src='/js/jquery.scrollex.min.js')
