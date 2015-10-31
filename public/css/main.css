@@ -1,6 +1,11 @@
-@import url(font-awesome.min.css);
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
-@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(/fonts/Montserrat-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url(/fonts/Montserrat-Bold.ttf) format('truetype');
+}
 
 /* Reset */
 
@@ -1407,7 +1412,7 @@
 
 	body, input, select, textarea {
 		color: #fff;
-		font-family: "Montserrat", "Open Sans", Helvetica, sans-serif;
+		font-family: Montserrat-Regular, "Open Sans", Helvetica, sans-serif;
 		font-size: 15pt;
 		font-weight: 400;
 		letter-spacing: 0.075em;
@@ -1468,6 +1473,7 @@
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #fff;
+		font-family: Montserrat-Bold, "Open Sans", Helvetica, sans-serif;
 		font-weight: 800;
 		letter-spacing: 0.225em;
 		line-height: 1em;
