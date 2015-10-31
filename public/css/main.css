@@ -3365,9 +3365,12 @@
 						display: block;
 						font-size: 0.8em;
 						letter-spacing: 0.225em;
-						padding: 0 1.5em;
+						padding: 0 3em 0 1.5em;
 						text-transform: uppercase;
 					}
+						#header.alt nav > ul > li > a {
+							padding: 0 1.5em;
+						}
 
 						#header nav > ul > li > a.menuToggle {
 							outline: 0;
@@ -3395,20 +3398,6 @@
 								width: 4.25em;
 							}
 
-						@media screen and (max-width: 736px) {
-							#header nav > ul > li > a {
-								padding: 0 1.5em;
-							}
-
-						}
-						@media screen and (max-width: 480px) {
-							#header.alt nav > ul > li > a {
-								padding: 0 0 0 1.5em;
-							}
-							#header nav > ul > li > a {
-								padding: 0 1.5em;
-							}
-						}
 					#header nav > ul > li:first-child {
 						margin-left: 0;
 					}
