@@ -3402,8 +3402,11 @@
 
 						}
 						@media screen and (max-width: 480px) {
-							#header nav > ul > li > a {
+							#header.alt nav > ul > li > a {
 								padding: 0 0 0 1.5em;
+							}
+							#header nav > ul > li > a {
+								padding: 0 1.5em;
 							}
 						}
 					#header nav > ul > li:first-child {
