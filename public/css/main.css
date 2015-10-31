@@ -3298,9 +3298,9 @@
 		-ms-transition: background-color 0.2s ease;
 		transition: background-color 0.2s ease;
 		background: #040016;
-		height: 3em;
+		height: 3.25em;
 		left: 0;
-		line-height: 3em;
+		line-height: 3.25em;
 		position: fixed;
 		top: 0;
 		width: 100vw;
@@ -3327,7 +3327,8 @@
 			}
 			
 				#header h1 a img {
-					width: 3em;
+					width: 2.5em;
+					vertical-align: middle;
 				}
 
 				@media screen and (max-width: 736px) {
@@ -3335,10 +3336,6 @@
 					#header h1 a {
 						font-size: 0.8em;
 					}
-						
-						#header h1 a img {
-							width: 3.75em;
-						}
 
 				}
 
@@ -3377,15 +3374,25 @@
 							position: relative;
 						}
 
+							#header.alt nav > ul > li > a.menuToggle:after {
+								background-image: url(/images/slice/Logo_45px.png);
+								background-position: right center;
+								background-repeat: no-repeat;
+								content: '';
+								display: inline-block;
+								height: 4em;
+								vertical-align: top;
+								width: 4.25em;
+							}
 							#header nav > ul > li > a.menuToggle:after {
 								background-image: url("/images/svg/bars.svg");
 								background-position: right center;
 								background-repeat: no-repeat;
 								content: '';
 								display: inline-block;
-								height: 3.75em;
+								height: 4em;
 								vertical-align: top;
-								width: 2em;
+								width: 4.25em;
 							}
 
 							@media screen and (max-width: 736px) {
