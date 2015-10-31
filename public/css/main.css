@@ -3371,22 +3371,21 @@
 						#header.alt nav > ul > li > a {
 							padding: 0 1.5em;
 						}
+						@media screen and (max-width: 736px) {
 
+							#header nav > ul > li > a {
+								padding: 0 1.5em;
+							}
+							#header.alt nav > ul > li > a {
+								padding: 0 0 0 1.5em;
+							}
+		
+						}
 						#header nav > ul > li > a.menuToggle {
 							outline: 0;
 							position: relative;
 						}
 
-							#header.alt nav > ul > li > a.menuToggle:after {
-								background-image: url(/images/slice/Logo_45px.png);
-								background-position: right center;
-								background-repeat: no-repeat;
-								content: '';
-								display: inline-block;
-								height: 4em;
-								vertical-align: top;
-								width: 4.25em;
-							}
 							#header nav > ul > li > a.menuToggle:after {
 								background-image: url("/images/svg/bars.svg");
 								background-position: right center;
@@ -3396,6 +3395,9 @@
 								height: 4em;
 								vertical-align: top;
 								width: 4.25em;
+							}
+							#header.alt nav > ul > li > a.menuToggle:after {
+								background-image: url(/images/slice/Logo_45px.png);
 							}
 
 					#header nav > ul > li:first-child {
