@@ -1810,19 +1810,11 @@
 						padding: 0 3em 0 1.5em;
 						text-transform: uppercase;
 					}
+
 						#header.alt nav > ul > li > a {
 							padding: 0 1.5em;
 						}
-						@media screen and (max-width: 736px) {
 
-							#header nav > ul > li > a {
-								padding: 0 1.5em;
-							}
-							#header.alt nav > ul > li > a {
-								padding: 0 0 0 1.5em;
-							}
-		
-						}
 						#header nav > ul > li > a.menuToggle {
 							outline: 0;
 							position: relative;
@@ -1838,8 +1830,32 @@
 								vertical-align: top;
 								width: 4.25em;
 							}
+
 							#header.alt nav > ul > li > a.menuToggle:after {
 								background-image: url(/images/slice/Logo_45px.png);
+							}
+
+							@media screen and (max-width: 736px) {
+
+								#header nav > ul > li > a {
+									padding: 0 1.5em;
+								}
+
+								#header nav > ul > li > a.menuToggle:after {
+									background-position: center center;
+								}
+			
+							}
+
+							@media screen and (max-width: 480px) {
+
+								#header.alt nav > ul > li > a {
+									padding: 0 0 0 1.5em;
+								}
+
+								#header nav > ul > li > a.menuToggle:after {
+									background-position: right center;
+								}
 							}
 
 					#header nav > ul > li:first-child {
@@ -2113,10 +2129,10 @@
 
 	#main > header {
 		padding: 12em 0 10em 0 ;
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/slice/Header_Image.png.jpg");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/slice/Header_Image.png.jpg");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/slice/Header_Image.png.jpg");
-		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/slice/Header_Image.png.jpg");
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/slice/header_map.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/slice/header_map.jpg");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/slice/header_map.jpg");
+		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/slice/header_map.jpg");
 		background-attachment: fixed;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -2263,10 +2279,10 @@
 /* Landing */
 
 	body.landing #page-wrapper {
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/slice/Header_Image.png.jpg");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/slice/Header_Image.png.jpg");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/slice/Header_Image.png.jpg");
-		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/slice/Header_Image.png.jpg");
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/slice/header_map.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/slice/header_map.jpg");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/slice/header_map.jpg");
+		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/slice/header_map.jpg");
 		background-attachment: fixed;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -2284,10 +2300,10 @@
 
 	body.is-mobile.landing #banner,
 	body.is-mobile.landing .wrapper.style4 {
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/slice/Header_Image.png.jpg");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/slice/Header_Image.png.jpg");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/slice/Header_Image.png.jpg");
-		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/slice/Header_Image.png.jpg");
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/slice/header_map.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/slice/header_map.jpg");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/slice/header_map.jpg");
+		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/slice/header_map.jpg");
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
